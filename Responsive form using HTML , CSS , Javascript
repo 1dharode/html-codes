@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+	div.container{
+		position: relative;
+		padding: 30px;
+		top: 100px;
+		height: 250px;
+		border-radius: 5px;
+		backdrop-filter: blur(5px);
+		box-shadow: -3px 4px 19px black;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+	 	background-image: url(https://wallpaperbat.com/img/456779-ultraviolet-4k-wallpaper-3840-x-2160-wallpaper.jpg);
+	 	background-attachment: fixed;
+	 	background-repeat: no-repeat;
+	 	background-size: cover; 
+	}
+	input{
+		display:flex;
+		margin: 10px;
+		background: black;
+		opacity: 0.7;
+		border-radius: 5px;
+		letter-spacing: 2px;
+		padding: 2px;
+		color: white;
+		/*box-shadow: 6px 7px 7px black;*/
+	}
+	label{
+		display: flex;
+		color: white;
+		justify-content: center;
+	}
+	i{
+		font-size: 50px;
+		position: relative;
+		top: -20px;
+		left: 65px;
+	}
+	button{
+		position: relative;
+		left: 128px;
+		top: 14px;
+		background: black;
+		opacity: 0.7;
+		color: white;
+		cursor: pointer;
+		padding: 1px;
+		border-radius: 5px;
+	}
+	button:hover{
+		color: white;
+		opacity: 0.9;
+	}
+</style>
+<body>
+<div class="container">
+
+<i class="fas fa-user-circle"></i>
+
+	<form action="d.php">
+		<label>First name</label>
+		<input type="text" name="" onblur="br(this)" onfocus="fn(this)">
+		<label>Middle name</label>
+		<input type="text" name="" onblur="br(this)" onfocus="fn(this)">
+		<label>Last name</label>
+		<input type="text" name="" onblur="br(this)" onfocus="fn(this)">
+		<button type="submit">Submit</button>
+	</form>
+
+</div>
+
+<script type="text/javascript">
+	function fn (element) {
+		element.style.boxShadow="6px 3px 6px black";
+		element.style.background="none";
+	}
+	function br (element) {
+		element.style.boxShadow="";
+		element.style.background="";
+	}
+</script>
+
+</body>
+</html>
